@@ -8,15 +8,17 @@
 size = Vector2(632, 367)
 
 [node name="Bed" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 11
 
-[node name="Bed" type="Sprite2D" parent="."]
+[node name="BedSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_l6iig")
 
-[node name="PillowLarge" type="Sprite2D" parent="Bed"]
+[node name="PillowLargeSprite" type="Sprite2D" parent="BedSprite"]
 position = Vector2(118, -6)
 texture = ExtResource("2_4log1")
 
-[node name="PillowSmall" type="Sprite2D" parent="Bed"]
+[node name="PillowSmallSprite" type="Sprite2D" parent="BedSprite"]
 position = Vector2(221, -4)
 rotation = 0.102974
 scale = Vector2(0.935, 0.935)
