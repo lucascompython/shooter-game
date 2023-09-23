@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq417b4f3k737"]
+
+[ext_resource type="Texture2D" uid="uid://mws07qifs0ld" path="res://graphics/objects/wall_lamp.png" id="1_w068l"]
+
+[node name="WallLamp" type="StaticBody2D"]
+
+[node name="WallLampSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_w068l")
+region_enabled = true
+region_rect = Rect2(-0.097702, 2.14047, 837.008, 165.539)
+
+[node name="Hitbox" type="CollisionPolygon2D" parent="."]
