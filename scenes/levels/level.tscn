@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d260x5oyxxqqd"]
+[gd_scene load_steps=19 format=3 uid="uid://d260x5oyxxqqd"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_ckeqh"]
 [ext_resource type="PackedScene" uid="uid://ce8n60qf5ktyn" path="res://scenes/objects/gate.tscn" id="2_iikwq"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bv1p4tthnda2l" path="res://graphics/tilesets/soil.png" id="10_3ktnl"]
 [ext_resource type="PackedScene" uid="uid://bhmktc0cldarr" path="res://scenes/houses/house.tscn" id="11_31key"]
 [ext_resource type="PackedScene" uid="uid://bbxi4iy0q3ggj" path="res://scenes/objects/steam_vent.tscn" id="12_yvqln"]
+[ext_resource type="Texture2D" uid="uid://bshlhe2bfq7r5" path="res://icon.svg" id="15_83rwt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tmt15"]
 resource_name = "walls"
@@ -113,6 +114,10 @@ position = Vector2(667, -481)
 position = Vector2(278, 379)
 
 [node name="Projectiles" type="Node2D" parent="."]
+
+[node name="Thing" type="Thing" parent="."]
+position = Vector2(-422, 457)
+texture = ExtResource("15_83rwt")
 
 [connection signal="player_entered" from="Gate" to="." method="_on_gate_player_entered"]
 [connection signal="player_exited" from="Gate" to="." method="_on_gate_player_exited"]

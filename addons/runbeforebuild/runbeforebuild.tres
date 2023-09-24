@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Exports" load_steps=2 format=3 uid="uid://dbqxec4brnh8u"]
+
+[ext_resource type="Script" path="res://addons/runbeforebuild/exports.gd" id="1_y4ii1"]
+
+[resource]
+script = ExtResource("1_y4ii1")
+debug_cmd = "cargo build"
+release_cmd = "cargo build --release"
+cwd = "./rust"

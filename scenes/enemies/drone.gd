@@ -4,6 +4,7 @@ const SPEED := 300
 
 func _process(_delta: float) -> void:
 
+
 	var direction = Vector2.RIGHT
 	
 	velocity = direction * 300
