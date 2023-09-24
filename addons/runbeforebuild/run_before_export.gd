@@ -17,7 +17,7 @@ func _export_begin(_features: PackedStringArray, is_debug: bool, _path: String, 
 	if output[0]: print("OUTPUT: ", output)
 	
 	if exit_code != 0:
-		print("ERROR: Something went wrong when executing: '%s'" % cmds[1])	
+		print("ERROR: Something went wrong when executing: '%s'" % cmd)	
 	else:
 		print("Successfully executed '%s'!" % cmd)
 

@@ -3,6 +3,7 @@ class_name Exports
 @export var debug_cmd := "cargo build"
 ## Command to execute when exporting
 @export var release_cmd := "cargo build --release"
+## The working directory for running the commands
 @export var cwd := "./rust"
 
 
