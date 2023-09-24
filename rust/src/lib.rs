@@ -23,7 +23,7 @@ impl Sprite2DVirtual for Thing {
         godot_print!("Hello, world! From rust!"); // Prints to the Godot console
 
         Self {
-            speed: 10000.0,
+            speed: 1000.0,
             angular_speed: std::f64::consts::PI,
             sprite,
         }
