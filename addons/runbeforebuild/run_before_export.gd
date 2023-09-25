@@ -22,3 +22,5 @@ func _export_begin(_features: PackedStringArray, is_debug: bool, _path: String, 
 		print("Successfully executed '%s'!" % cmd)
 
 
+func _get_name() -> String: # get rid of error
+	return "RunBeforeExport"
