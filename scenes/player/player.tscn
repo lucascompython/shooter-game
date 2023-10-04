@@ -50,6 +50,7 @@ one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.6, 0.6)
+process_callback = 0
 position_smoothing_enabled = true
 
 [node name="ProjectilesStartPositions" type="Node2D" parent="."]
