@@ -9,6 +9,9 @@ func _physics_process(_delta: float) -> void:
 	
 	move_and_slide()
 	
+func hit() -> void:
+	print("DAMAGE")
+	
 #
 #func _process(_delta: float) -> void:
 #
