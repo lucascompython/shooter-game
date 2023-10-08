@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
 
-const SPEED := 1000
+const MAX_SPEED := 1000
+@export var speed := MAX_SPEED
+
 
 signal laser_shot(position: Vector2, direction: Vector2)
 signal grenade_shot(position: Vector2, direction: Vector2)
@@ -14,7 +16,7 @@ func _physics_process(_delta: float) -> void:
 	var direction := Input.get_vector("left", "right", "up", "down")
 	#position += direction * SPEED * delta
 
-	velocity = direction * SPEED 
+	velocity = direction * speed 
 	move_and_slide()
 
 func _process(_delta: float) -> void:
