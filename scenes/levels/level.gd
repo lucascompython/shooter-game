@@ -27,4 +27,14 @@ func _on_player_grenade_shot(grenade_position: Vector2, direction: Vector2) -> v
 	
 	$Projectiles.add_child(grenade)
 	
-	
+
+
+func _on_house_body_entered(_body: Node2D) -> void: # This signal is from the house scene
+	var tween := get_tree().create_tween()
+	tween.tween_property($Player/Camera2D, "zoom", Vector2(1, 1), 1)
+
+
+
+func _on_house_body_exited(_body: Node2D) -> void: # This signal is from the house scene
+	var tween := get_tree().create_tween()
+	tween.tween_property($Player/Camera2D, "zoom", Vector2(0.6, 0.6), 1)
