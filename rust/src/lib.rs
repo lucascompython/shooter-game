@@ -1,5 +1,5 @@
+use godot::engine::ISprite2D;
 use godot::engine::Sprite2D;
-use godot::engine::Sprite2DVirtual;
 use godot::prelude::*;
 
 struct MyExtension;
@@ -18,7 +18,7 @@ struct Thing {
 }
 
 #[godot_api]
-impl Sprite2DVirtual for Thing {
+impl ISprite2D for Thing {
     fn init(sprite: Base<Sprite2D>) -> Self {
         godot_print!("Hello, world! From rust!"); // Prints to the Godot console
 
